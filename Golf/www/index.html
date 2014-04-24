@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script type="text/javascript" src="cordova.js">
+            //Dont do code here
+        </script>
+        <script type="text/javascript" src="js/jquery/jquery-2.1.0.min.js">
+            //or here
+        </script>
+        <script type="text/javascript" src="js/jquery/mobile/jquery.mobile-1.4.2.min.js">
+            //or here
+        </script>
+        <link href="js/jquery/mobile/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+		function save_9_hole_game_score()
+		{
+			
+		}
+		var db = openDatabase('scores', '2.0', 'tables of scores', 2*1024*1024)
+        </script>
+        <style type="text/css">
+        table
+		{
+			width:100%
+		}
+		td
+		{
+			text-align:center;
+		}
+        </style>
+    </head>
+    <!-- Page Layout
+    <div data-role="page" id="">
+        	<div data-role="header">
+            	<h1></h1>
+                <a href="" data-rel="back">Back</a>
+            </div>
+            <div data-role="content">
+            
+            </div>
+        </div> 
+    -->
+    <body>
+    	<div data-role="page" id="index">
+        	<div data-role="header">
+            	<h1>StatsLite Golf</h1>
+            </div>
+            <div data-role="content">
+           	 	<a href="#holes" data-transition="slide" data-role="button">New Game</a>
+            	<a href="#view" data-transition="slide" data-role="button">View Scores</a>
+            </div>
+        </div>
+        <div data-role="page" id="holes">
+        	<div data-role="header">
+            	<h1>How Many Holes?</h1>
+                  <a href="" data-rel="back">Back</a>
+            </div>
+            <div data-role="content">
+            	<a href="#9hole" data-transition="slide" data-role="button">9 Hole Game</a>
+                <a href="#18hole" data-transition="slide" data-role="button">18 Hole Game</a>
+            </div>
+        </div>
+        <div data-role="page" id="9hole">
+        	<div data-role="header">
+            	<h1> 9 Hole Game </h1>
+                <a href="" data-rel="back">Back</a>
+            </div>
+            <div data-role="content">
+            	<form>
+                	<table border="1">
+                    	<tr>
+                        	<td><strong>Holes:</strong></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                        	<td><strong>Score:</strong></td>
+                            <td><input type="number" min="1" placeholder="Hole 1"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 2"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 3"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 4"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 5"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 6"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 7"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 8"/></td>
+                            <td><input type="number" min="1" placeholder="Hole 9"/></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="save"/>
+                </form>
+            </div>
+        </div>
+        <div data-role="page" id="view">
+        	<div data-role="header">
+            	<h1>Score</h1>
+                <a href="" data-rel="back">Back</a>
+            </div>
+            <div data-role="content">
+            
+            </div>
+        </div> 
+    </body>
+</html>
