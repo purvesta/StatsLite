@@ -1,4 +1,13 @@
 #################
+## Cordova
+#################
+
+Golf/hooks/*
+Golf/platform/*
+Golf/plugins/*
+
+
+#################
 ## Eclipse
 #################
 
